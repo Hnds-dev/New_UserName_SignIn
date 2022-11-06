@@ -1,0 +1,49 @@
+body {
+    font-family: arial;
+    color: #333;
+}
+
+h1 {
+    font-weight: normal;
+    margin: 20px auto;
+    text-align: center;
+}
+
+form {
+    width: 500px;
+    margin: 20px auto;
+}
+
+input {
+    display: block;
+    padding: 8px 16px;
+    font-size: 2em;
+    margin: 10px auto;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+    outline: none !important;
+}
+
+input.valed {
+    border-color: green;
+}
+input.invaled {
+    border-color: orange;
+}
+input + p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    opacity: 0;
+    font-weight: bold;
+    margin: 0 10px;
+    color: orange;
+    height: 0;
+}
+
+input.invaled + p {
+    opacity: 1;
+    height: auto;
+    margin-bottom: 20px;
+}
